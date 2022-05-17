@@ -15,6 +15,9 @@ public class NPC_Move : MonoBehaviour
     public float SamplePos_MaxDistance;
     public int SamplePos_AreaMask;
 
+    [Header("NPCの死亡エフェクト")]
+    public GameObject DeathEffect;
+
     [Header("NPCのスポナー")]
     private GameObject m_NpcSpowner;
 
@@ -63,7 +66,14 @@ public class NPC_Move : MonoBehaviour
     {
         if (m_NpcSpowner)
         {
+            Instantiate(
+                DeathEffect,
+                this.gameObject.transform.position+new Vector3(0,0.1f,0),
+                this.gameObject.transform.rotation);
+
             m_NpcSpowner.GetComponent<NpcSpowner>().SubtractionSpownNum();
+
+
 
         }
     }

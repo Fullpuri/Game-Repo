@@ -1176,6 +1176,7 @@ MonoBehaviour:
   m_Player: {fileID: 7246489255527548528}
   SamplePos_MaxDistance: 5
   SamplePos_AreaMask: 1
+  DeathEffect: {fileID: 6238840835561553718, guid: 8a5173518bd419a46b2549dd25cc611c, type: 3}
 --- !u!195 &7246489255527548528
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1254,6 +1255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NPCMinAge: 10
   m_NPCMaxAge: 80
+  m_Age: 0
 --- !u!1 &3626635829420318583
 GameObject:
   m_ObjectHideFlags: 0
