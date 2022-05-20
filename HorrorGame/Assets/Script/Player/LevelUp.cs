@@ -141,17 +141,17 @@ public class LevelUp : MonoBehaviour
                     continue;
                 case ((int)Form.State.Second):
                     {
-
+                        m_levelUp.m_speed = 0.05f;
                     }
                     continue;
                 case ((int)Form.State.Third):
                     {
-
+                        //‹ó’†•‚—V
+                        floating();
                     }
                     continue;
                 case ((int)Form.State.Fourth):
                     {
-                        m_levelUp.m_speed = 0.05f;
                         m_cnt++;
 
                         //‰EƒNƒŠƒbƒN’·‰Ÿ‚µ‚Å
@@ -162,9 +162,6 @@ public class LevelUp : MonoBehaviour
                                 m_levelUp.m_camObj.transform.position,
                                 m_levelUp.m_camObj.transform.rotation);
                         }
-
-                        //‹ó’†•‚—V
-                        floating();
                     }
                     continue;
                 case ((int)Form.State.Five):

@@ -30,11 +30,10 @@ public class AnimationBranch : MonoBehaviour
             case (int)Form.State.First:
                 m_animator.SetTrigger("Swing");
                 break;
-
             case (int)Form.State.Second:
+            case (int)Form.State.Third:
                 m_animator.SetTrigger("Throw");
                 break;
-            case (int)Form.State.Third:
             case (int)Form.State.Fourth:
             case (int)Form.State.Five:
                 m_animator.SetTrigger("BigSwing");
