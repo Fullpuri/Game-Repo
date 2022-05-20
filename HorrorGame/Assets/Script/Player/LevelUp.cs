@@ -28,11 +28,23 @@ public class LevelUp : MonoBehaviour
     //魔法制限用カウンタ
     float m_cnt=0;
 
+    [Header("ゲーム開始時の年齢")]
+    public int GameStateAge = 9999;
+    [Header("1段階目の最低年齢")]
+    public int FirstStepAgeLevel=9800;
+    [Header("2段階目の最低年齢")]
+    public int SecondStepAgeLevel = 9400;
+    [Header("3段階目の最低年齢")]
+    public int ThirdStepAgeLevel= 8200;
+    [Header("4段階目の最低年齢")]
+    public int FourthStepAgeLevel = 6600;
+    [Header("5段階目の最低年齢")]
+    public int FiveStepAgeLevel = 20;
+
     [Header("死神の年齢")]
     public int m_Age = 9999;
     [Header("ジャンプ力")]
-    public float m_jumpPower=0;
-
+    public float m_jumpPower = 0;
 
 
     //形態の状態変数
@@ -41,6 +53,8 @@ public class LevelUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //年齢の初期化
+        m_Age = GameStateAge;
         m_levelUp = GetComponent<FPSCamera>();
     }
 
@@ -48,22 +62,22 @@ public class LevelUp : MonoBehaviour
     void Update()
     {
         //初期状態
-        if (m_Age > 9800)
+        if (m_Age > FirstStepAgeLevel)
         {
             m_NowState = Form.State.First;
         }
         //第二段階
-        else if(m_Age > 9400)
+        else if(m_Age > SecondStepAgeLevel)
         {
             m_NowState = Form.State.Second;
         }
         //第三段階
-        else if (m_Age > 8200)
+        else if (m_Age > ThirdStepAgeLevel)
         {
             m_NowState = Form.State.Third;
         }
         //第四段階
-        else if (m_Age > 6600)
+        else if (m_Age > FourthStepAgeLevel)
         {
             m_NowState = Form.State.Fourth;
         }
