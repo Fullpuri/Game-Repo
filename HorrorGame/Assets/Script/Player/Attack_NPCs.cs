@@ -82,10 +82,13 @@ public class Attack_NPCs : MonoBehaviour
             case (int)Form.State.Second:
                 break;
             case (int)Form.State.Third:
+                break;
             case (int)Form.State.Fourth:
+                gameObject.transform.localScale = DefaultScale * BigSwingScale;
+                m_Colider.radius *= CollisonRadius;
+                break;
             case (int)Form.State.Five:
                 gameObject.transform.localScale = DefaultScale * BigSwingScale;
-
                 m_Colider.radius *= CollisonRadius;
                 break;
         }
