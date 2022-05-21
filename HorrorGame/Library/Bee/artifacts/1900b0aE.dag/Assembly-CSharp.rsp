@@ -359,6 +359,7 @@
 "Assets/Script/Player/CharactorController.cs"
 "Assets/Script/Player/Explosion.cs"
 "Assets/Script/Player/FPSCamera.cs"
+"Assets/Script/Player/LevelSlider.cs"
 "Assets/Script/Player/LevelUp.cs"
 "Assets/Script/Player/MagicMove.cs"
 "Assets/Script/Player/MagicRader.cs"
