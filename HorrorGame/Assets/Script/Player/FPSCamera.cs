@@ -65,6 +65,8 @@ public class FPSCamera : MonoBehaviour
         {
             this.transform.position = new Vector3(-8.4f, 0.65f, -18.3f);
         }
+
+   
     }
 
     private void FixedUpdate()
@@ -127,5 +129,13 @@ public class FPSCamera : MonoBehaviour
         q.x = Mathf.Tan(angleX * Mathf.Deg2Rad * 0.5f);
 
         return q;
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            //Debug.Log("“–‚Á‚Ä‚¢‚Ü‚·");
+        }
     }
 }

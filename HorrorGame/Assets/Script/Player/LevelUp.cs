@@ -109,13 +109,16 @@ public class LevelUp : MonoBehaviour
         //スペースキーで浮遊
         if (Input.GetKey(KeyCode.Space))
         {
-            m_levelUp.m_rigidbody.isKinematic = true;
+            m_levelUp.m_rigidbody.useGravity = false;
+           
         }
         //Eキーで解除
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            m_levelUp.m_rigidbody.isKinematic = false;
+            m_levelUp.m_rigidbody.useGravity = true;
         }
+
+        
     }
 
     private void FormBranch()
@@ -176,5 +179,11 @@ public class LevelUp : MonoBehaviour
     public int GetNowState()
     {
         return (int)m_NowState;
+    }
+
+    void Stop()
+    {
+        m_levelUp.m_rigidbody.velocity = Vector3.zero;
+        m_levelUp.m_rigidbody.angularVelocity = Vector3.zero;
     }
 }
