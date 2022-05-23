@@ -12,17 +12,23 @@ public class TimeUp : MonoBehaviour
 
     [SerializeField] private GameObject m_GameOverImage=null;
 
+    private System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
+
+
     // Start is called before the first frame update
     void Start()
     {
         m_GameOverImage.SetActive(false);
+
+        stopwatch.Start();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var Seconds = Time.time;
-        var minutes = Time.time / 60;
+        var Seconds = stopwatch.Elapsed.Seconds;
+        var minutes=stopwatch.Elapsed.Minutes;
+
         TimerText.text = string.Format("3:00/{0:0}:{1:00}", minutes, Seconds);
 
         //タイムオーバーしてるか確認
