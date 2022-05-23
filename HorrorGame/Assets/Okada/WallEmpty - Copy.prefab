@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6419585325344506527}
   m_Layer: 0
-  m_Name: WallEmpty
+  m_Name: WallEmpty - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
