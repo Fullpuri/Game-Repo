@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 83
+  controlID: 16
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 19
+  controlID: 27
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -376,9 +376,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e0660000
-      m_LastClickedID: 26336
-      m_ExpandedIDs: 20fbffff
+      m_SelectedIDs: 8e400400
+      m_LastClickedID: 278670
+      m_ExpandedIDs: b47bfcff00a4ffff24fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -660,9 +660,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.771253, y: 1.0654321, z: -15.756609}
+    m_Target: {x: 375.98697, y: 480.3864, z: -1110.0715}
     speed: 2
-    m_Value: {x: -7.771253, y: 1.0654321, z: -15.756609}
+    m_Value: {x: 375.98697, y: 480.3864, z: -1110.0715}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -709,13 +709,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.019743098, y: -0.97849, z: 0.17229722, w: 0.112058096}
+    m_Target: {x: 0.049481116, y: -0.006857935, z: 0.00032496382, w: 0.99880016}
     speed: 2
-    m_Value: {x: 0.01974235, y: -0.9784529, z: 0.1722907, w: 0.11205385}
+    m_Value: {x: 0.04947871, y: -0.0068576015, z: 0.00032494802, w: 0.9987516}
   m_Size:
-    m_Target: 0.84933496
+    m_Target: 1093.0754
     speed: 2
-    m_Value: 0.84933496
+    m_Value: 1093.0754
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -781,22 +781,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script/NPCs
+    - Assets/Script/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script/NPCs
+  - Assets/Script/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\miki1\Desktop\HorroGame\HorrorGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 52.200012}
-    m_SelectedIDs: a2900300
-    m_LastClickedID: 233634
-    m_ExpandedIDs: 00000000508e0300608e0300648e030000ca9a3b
+    scrollPos: {x: 0, y: 132.20001}
+    m_SelectedIDs: 4ade0000
+    m_LastClickedID: 56906
+    m_ExpandedIDs: 000000009ada00003ade000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -824,7 +824,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000508e0300
+    m_ExpandedIDs: 000000009ada0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -876,7 +876,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 257.2}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 125
@@ -943,7 +943,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 487.2
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
