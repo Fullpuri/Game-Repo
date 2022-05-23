@@ -1253,8 +1253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c187aee9b08b99e468fa2b74c7c1595b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NPCMinAge: 10
-  m_NPCMaxAge: 80
+  m_NPCMinAge: 25
+  m_NPCMaxAge: 112
   m_Age: 0
 --- !u!1 &3626635829420318583
 GameObject:
