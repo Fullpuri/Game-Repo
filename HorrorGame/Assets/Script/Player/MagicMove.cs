@@ -23,7 +23,8 @@ public class MagicMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Destroy(gameObject, m_deleteTime);
-        
+
+
     }
 
     // Update is called once per frame
@@ -46,6 +47,14 @@ public class MagicMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            //プレイヤーのレベルスクリプトを取得
+            GameObject m_PlayerObj = GameObject.Find("Player");
+            LevelUp m_PlayerLevel = m_PlayerObj.GetComponent<LevelUp>();
+
+            //プレイヤーの年齢 - 殺したNPCの年齢
+            int npcAge = collision.gameObject.GetComponent<NpcAgeManage>().m_Age;
+            m_PlayerLevel.m_Age -= npcAge;
+
             Destroy(collision.gameObject);
         }
     }
