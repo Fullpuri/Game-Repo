@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Form
 {
@@ -26,7 +28,7 @@ public class LevelUp : MonoBehaviour
     public bool m_isGround=false;
 
     //魔法制限用カウンタ
-    float m_cnt=0;
+    float m_cnt = 0;
 
     [Header("ゲーム開始時の年齢")]
     public int GameStateAge = 9999;
@@ -39,13 +41,14 @@ public class LevelUp : MonoBehaviour
     [Header("4段階目の最低年齢")]
     public int FourthStepAgeLevel = 6600;
     [Header("5段階目の最低年齢")]
-    public int FiveStepAgeLevel = 20;
+    public int FiveStepAgeLevel = 2000;
 
     [Header("死神の年齢")]
     public int m_Age = 9999;
     [Header("ジャンプ力")]
     public float m_jumpPower = 0;
-
+    [Header("ゲームクリアUI")]
+    public GameObject gameclear;
 
     //形態の状態変数
     private Form.State m_NowState= Form.State.First;
@@ -56,6 +59,9 @@ public class LevelUp : MonoBehaviour
         //年齢の初期化
         m_Age = GameStateAge;
         m_levelUp = GetComponent<FPSCamera>();
+
+        gameclear.GetComponent<Text>();
+        gameclear.SetActive(false);
     }
 
     // Update is called once per frame
@@ -85,10 +91,12 @@ public class LevelUp : MonoBehaviour
         else
         {
             m_NowState = Form.State.Five;
+            
         }
 
         //実処理
         FormBranch();
+        GameClear();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -181,9 +189,17 @@ public class LevelUp : MonoBehaviour
         return (int)m_NowState;
     }
 
-    void Stop()
+    void GameClear()
     {
-        m_levelUp.m_rigidbody.velocity = Vector3.zero;
-        m_levelUp.m_rigidbody.angularVelocity = Vector3.zero;
+        if(m_Age < FiveStepAgeLevel)
+        {
+            gameclear.SetActive(true);
+            Invoke("ChangeScene", 3.0f);
+        }
+    }
+
+    void ChangeScene()
+    {
+        SceneManager.LoadScene("GameStart");
     }
 }
