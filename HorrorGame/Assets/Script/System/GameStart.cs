@@ -15,7 +15,7 @@ public class GameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void ClickStartButten()

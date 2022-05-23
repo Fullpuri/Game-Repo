@@ -24,7 +24,7 @@ public class FPSCamera : MonoBehaviour
 
     float m_moveX, m_moveZ;
 
-    bool m_cursorLock = true;
+    public bool m_cursorLock = true;
 
     // Start is called before the first frame update
     void Start()
@@ -129,13 +129,5 @@ public class FPSCamera : MonoBehaviour
         q.x = Mathf.Tan(angleX * Mathf.Deg2Rad * 0.5f);
 
         return q;
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.tag == "Wall")
-        {
-            //Debug.Log("“–‚Á‚Ä‚¢‚Ü‚·");
-        }
     }
 }
