@@ -1914,7 +1914,7 @@ ScriptsOnlyBuild:
     className: FPSCamera
   - hash:
       serializedVersion: 2
-      Hash: 7828ce496d6361716a268fbb956b6154
+      Hash: 08a17fb84491461cf10d7baab0c18c27
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelUp
