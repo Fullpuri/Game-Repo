@@ -23,6 +23,7 @@ public class LevelUp : MonoBehaviour
 
     private FPSCamera m_levelUp;
     [SerializeField] GameObject magic;
+    [SerializeField] GameObject fireworks;
 
     //ínñ Ç…ê⁄ínÇµÇƒÇ¢ÇÈÇ©Ç«Ç§Ç©
     public bool m_isGround=false;
@@ -125,8 +126,6 @@ public class LevelUp : MonoBehaviour
         {
             m_levelUp.m_rigidbody.useGravity = true;
         }
-
-        
     }
 
     private void FormBranch()
@@ -194,7 +193,12 @@ public class LevelUp : MonoBehaviour
         if(m_Age < FiveStepAgeLevel)
         {
             gameclear.SetActive(true);
-            Invoke("ChangeScene", 3.0f);
+            Invoke("ChangeScene", 7.0f);
+
+            Instantiate(fireworks,
+                m_levelUp.m_camObj.transform.position + new Vector3(0, 5, 0),
+                Quaternion.identity);
+
         }
     }
 
