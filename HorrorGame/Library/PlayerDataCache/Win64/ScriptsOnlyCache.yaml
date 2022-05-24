@@ -21,6 +21,7 @@ ScriptsOnlyBuild:
     - NpcSpowner
     - RaderActivate
     - SE_Magic
+    - TimeUp
     - TitleCamRotate
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -179,6 +180,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 29
+      Script: {instanceID: 0}
     - Class: 33
       Script: {instanceID: 0}
     - Class: 43
@@ -220,46 +223,52 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 4554}
+      Script: {instanceID: 3086}
     - Class: 114
-      Script: {instanceID: 4720}
+      Script: {instanceID: 4556}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 4722}
     - Class: 114
-      Script: {instanceID: 5596}
+      Script: {instanceID: 4984}
     - Class: 114
-      Script: {instanceID: 6124}
+      Script: {instanceID: 5598}
     - Class: 114
-      Script: {instanceID: 6496}
+      Script: {instanceID: 6126}
     - Class: 114
-      Script: {instanceID: 6658}
+      Script: {instanceID: 6498}
     - Class: 114
-      Script: {instanceID: 6674}
+      Script: {instanceID: 6660}
     - Class: 114
-      Script: {instanceID: 6784}
+      Script: {instanceID: 6676}
     - Class: 114
-      Script: {instanceID: 7636}
+      Script: {instanceID: 6786}
     - Class: 114
-      Script: {instanceID: 7848}
+      Script: {instanceID: 7638}
     - Class: 114
-      Script: {instanceID: 8076}
+      Script: {instanceID: 7850}
     - Class: 114
-      Script: {instanceID: 8286}
+      Script: {instanceID: 8078}
     - Class: 114
-      Script: {instanceID: 8316}
+      Script: {instanceID: 8288}
     - Class: 114
-      Script: {instanceID: 8872}
+      Script: {instanceID: 8318}
     - Class: 114
-      Script: {instanceID: 9640}
+      Script: {instanceID: 8874}
     - Class: 114
-      Script: {instanceID: 9646}
+      Script: {instanceID: 9642}
     - Class: 114
-      Script: {instanceID: 10350}
+      Script: {instanceID: 9648}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10352}
+    - Class: 114
+      Script: {instanceID: 10670}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -286,6 +295,8 @@ ScriptsOnlyBuild:
     - Class: 238
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    - Class: 363
       Script: {instanceID: 0}
     Assets/Scenes/GameStart.unity:
     - Class: 1
@@ -320,6 +331,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 95
@@ -353,89 +366,89 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2786}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 3086}
     - Class: 114
-      Script: {instanceID: 3424}
+      Script: {instanceID: 3426}
     - Class: 114
-      Script: {instanceID: 3542}
+      Script: {instanceID: 3544}
     - Class: 114
-      Script: {instanceID: 3820}
+      Script: {instanceID: 3822}
     - Class: 114
-      Script: {instanceID: 3996}
+      Script: {instanceID: 3998}
     - Class: 114
-      Script: {instanceID: 4034}
+      Script: {instanceID: 4036}
     - Class: 114
-      Script: {instanceID: 4066}
+      Script: {instanceID: 4068}
     - Class: 114
-      Script: {instanceID: 4148}
+      Script: {instanceID: 4150}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 4530}
+      Script: {instanceID: 4532}
     - Class: 114
-      Script: {instanceID: 4978}
+      Script: {instanceID: 4980}
     - Class: 114
-      Script: {instanceID: 5128}
+      Script: {instanceID: 5130}
     - Class: 114
-      Script: {instanceID: 5172}
+      Script: {instanceID: 5174}
     - Class: 114
-      Script: {instanceID: 5346}
+      Script: {instanceID: 5348}
     - Class: 114
-      Script: {instanceID: 5590}
+      Script: {instanceID: 5592}
     - Class: 114
-      Script: {instanceID: 5726}
+      Script: {instanceID: 5728}
     - Class: 114
-      Script: {instanceID: 6676}
+      Script: {instanceID: 6678}
     - Class: 114
-      Script: {instanceID: 6704}
+      Script: {instanceID: 6706}
     - Class: 114
-      Script: {instanceID: 6784}
+      Script: {instanceID: 6786}
     - Class: 114
-      Script: {instanceID: 6794}
+      Script: {instanceID: 6796}
     - Class: 114
-      Script: {instanceID: 7084}
+      Script: {instanceID: 7086}
     - Class: 114
-      Script: {instanceID: 7088}
+      Script: {instanceID: 7090}
     - Class: 114
-      Script: {instanceID: 7124}
+      Script: {instanceID: 7126}
     - Class: 114
-      Script: {instanceID: 7460}
+      Script: {instanceID: 7462}
     - Class: 114
-      Script: {instanceID: 7636}
+      Script: {instanceID: 7638}
     - Class: 114
-      Script: {instanceID: 7832}
+      Script: {instanceID: 7834}
     - Class: 114
-      Script: {instanceID: 7942}
+      Script: {instanceID: 7944}
     - Class: 114
-      Script: {instanceID: 7950}
+      Script: {instanceID: 7952}
     - Class: 114
-      Script: {instanceID: 8102}
+      Script: {instanceID: 8104}
     - Class: 114
-      Script: {instanceID: 8154}
+      Script: {instanceID: 8156}
     - Class: 114
-      Script: {instanceID: 8210}
+      Script: {instanceID: 8212}
     - Class: 114
-      Script: {instanceID: 8316}
+      Script: {instanceID: 8318}
     - Class: 114
-      Script: {instanceID: 8332}
+      Script: {instanceID: 8334}
     - Class: 114
-      Script: {instanceID: 8468}
+      Script: {instanceID: 8470}
     - Class: 114
-      Script: {instanceID: 8652}
+      Script: {instanceID: 8654}
     - Class: 114
-      Script: {instanceID: 8816}
+      Script: {instanceID: 8818}
     - Class: 114
-      Script: {instanceID: 9330}
+      Script: {instanceID: 9332}
     - Class: 114
-      Script: {instanceID: 9832}
+      Script: {instanceID: 9834}
     - Class: 114
-      Script: {instanceID: 9976}
+      Script: {instanceID: 9978}
     - Class: 114
-      Script: {instanceID: 10258}
+      Script: {instanceID: 10260}
     - Class: 114
-      Script: {instanceID: 10530}
+      Script: {instanceID: 10532}
     - Class: 114
-      Script: {instanceID: 10650}
+      Script: {instanceID: 10652}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -461,6 +474,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -679,6 +694,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 551b96b4116b531a75ac7ee8a0d209c0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TimeUp
   - hash:
       serializedVersion: 2
       Hash: 36852b65a8c601cdcc66fa3a6099830e
@@ -1581,7 +1602,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerIntField
   - hash:
       serializedVersion: 2
-      Hash: f9ff94420a3d779d0ab7cfc034c68056
+      Hash: 9049f2ff37da34a47f1a4225b38b439a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Attack_NPCs
@@ -1887,13 +1908,13 @@ ScriptsOnlyBuild:
     className: SpawnOverDistance
   - hash:
       serializedVersion: 2
-      Hash: 5c3155ab62277858be3ab43a76f4ee8d
+      Hash: b625dc0c7fe6765468f05c87ff7c82cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FPSCamera
   - hash:
       serializedVersion: 2
-      Hash: 5b718304068364bddc8464e1e8717978
+      Hash: 7828ce496d6361716a268fbb956b6154
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelUp
@@ -2123,4 +2144,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/GameStart.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: "C:/Users/miki1/Desktop/HorroGame/HorrorGame/\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC/HorrorGame.exe"
+  playerPath: "C:/Users/miki1/Desktop/\u30B2\u30FC\u30E0\u5927\u8CDE\u4F5C\u54C1/HorrorGame.exe"

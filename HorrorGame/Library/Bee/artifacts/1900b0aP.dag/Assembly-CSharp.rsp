@@ -328,6 +328,7 @@
 "Assets/Script/UI/AgeCounter.cs"
 "Assets/Script/UI/FadeScript.cs"
 "Assets/Script/UI/RaderActivate.cs"
+"Assets/Script/UI/TimeUp.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
