@@ -38,8 +38,10 @@ public class TimeUp : MonoBehaviour
     private void TimeOverCheck()
     {
         //3•ª‚ğ’´‚¦‚Ä‚¢‚é‚È‚ç
-        if (Time.time / 60 > 3)
+        if (stopwatch.Elapsed.Minutes  >= 3)
         {
+            stopwatch.Stop();
+            stopwatch.Reset();
             m_GameOverImage.SetActive(true);
             //ƒV[ƒ“‘JˆÚ
             Invoke("ChangeScene", 3.0f);
