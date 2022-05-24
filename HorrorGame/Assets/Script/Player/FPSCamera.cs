@@ -17,7 +17,7 @@ public class FPSCamera : MonoBehaviour
     [Header("カメラの角度制限用")]
     public float m_minX = -90.0f, m_maxX = 90.0f;
     [Header("落下対策")]
-    public float m_fallPos = -3.0f;
+    public float m_fallPos;
 
     //カメラとキャラの回転値
     public Quaternion m_camRot, m_charaRot;
